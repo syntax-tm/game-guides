@@ -1,0 +1,1688 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Alpha Omega</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
+      integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
+      crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+      integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-dark-5@1.1.3/dist/css/bootstrap-dark.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@40,400,1,0" />
+    <style>
+      body {
+        color: white !important;
+      }
+      div, span, p, li, ul, ol, code {
+        color: white;
+      }
+      div.accordion-item {
+        color: white !important;
+      }
+      th {
+        text-align: center;
+      }
+      .aot-brain-rot {
+        color: rgb(75, 201, 75);
+      }
+      .aot-cryofreeze {
+        color: rgb(62, 198, 243);
+      }
+      .aot-fire-bomb {
+        color: rgb(218, 47, 47);
+      }
+      .aot-kill-a-watt {
+        color: rgb(230, 227, 60);
+      }
+      ul li:first-child {
+        margin-top: 1em;
+      }
+      ul li:last-child {
+        margin-bottom: 1em;
+      }
+      ol > li, ol > li + table {
+        margin-top: 1em;
+        margin-bottom: 1em;
+      }
+      .yellow {
+        color: yellow;
+      }
+      .green {
+        color: rgb(42, 182, 49);
+      }
+      .blue {
+        color:rgb(102, 196, 250)
+      }
+      .red {
+        color:rgb(230, 64, 64)
+      }
+      .purple {
+        color: rgb(175, 76, 221);
+      }
+      .orange {
+        color: rgb(243, 184, 75);
+      }
+      .green-house {
+        background: rgba(42, 182, 49, 0.70) !important;
+      }
+      .yellow-house, .yellow-house > code {
+        font-weight: 400;
+      }
+      .yellow-house {
+        background: rgba(230, 227, 60, 0.70) !important;
+      }
+      .yellow-house, .yellow-house > code {
+        color: black;
+        font-weight: 400;
+      }
+      h2 {
+        margin-top: .1rem;
+      }
+      .category {
+        margin-top: 1.5em !important;
+        margin-bottom: 0 !important;
+        margin-left: .2em !important;
+      }
+      .category:hover > * {
+        color: rgb(151, 250, 217) !important;
+        cursor: pointer;
+      }
+      .subcategory {
+        margin-top: .1 !important;
+        margin-bottom: .1 !important;
+        margin-left: .3em !important;
+      }
+      .subcategory:hover > * {
+        color: rgb(159, 89, 240) !important;
+        cursor: pointer;
+      }
+      .accordion-item, .accordion-header, button.accordion-button {
+        border-radius: 0 !important;
+      }
+      a {
+        color: rgb(60, 133, 243);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container align-middle mx-1" style="max-width: 90%; align-items: center;">
+      <h1 class="my-3 display-2">Alpha Omega</h1>
+      <h2 class="my-3 category" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-title="This is a walkthrough of all of the Easter Eggs in <b>Alpha Omega</b>, ranging from the Main Quest to the minor ones.">
+        <span>Easter Eggs & Quests</span>
+      </h2>
+      <div>
+        <h4 class="my-3 subcategory">
+          <i class="fa-solid fa-trophy"></i>
+          <span>Main Quest</span>
+        </h4>
+        <div>
+          <div class="accordion">
+            <!-- Setup (0) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingSetup">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Setup" aria-expanded="false" aria-controls="panelMainQuest-Setup">
+                  <i class="fa-solid fa-info me-3"></i>
+                  <span>Recommended Class Setup</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Setup" class="accordion-collapse collapse" aria-labelledby="panelMainQuest-headingSetup">
+                <div class="accordion-body p-1">
+                  <table class="table table-dark table-striped-columns m-0 text-center">
+                    <tr class="align-middle">
+                      <th>Specialist Weapon</th>
+                      <th colspan="4">Recommended Perks</th>
+                      <th>Starting Weapon</th>
+                      <th>Grenade</th>
+                    </tr>
+                    <tr class="align-middle">
+                      <td><i>Katana</i></td>
+                      <td class="bg-info"><i>Quick Revive</i></td>
+                      <td class="bg-warning"><i>Stamin-Up</i></td>
+                      <td class="bg-primary"><i>Dying Wish</i></td>
+                      <td class="bg-info"><i>Winter's Wail (Modifier)</i></td>
+                      <td><i>Strife</i></td>
+                      <td><i>Wraith Fire</i></td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+            </div>
+            <!-- Contain (1) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingContain">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Contain" aria-expanded="false" aria-controls="panelMainQuest-Contain">
+                  <i class="fa-solid fa-biohazard me-3"></i>
+                  <span> Contain the Gas Leak</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Contain" class="accordion-collapse collapse"
+                aria-labelledby="panelMainQuest-headingContain">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      After activating the <b>Pack-a-Punch</b>, progressing to the next round.
+                    </li>
+                    <ll>
+                      Activate <b>Rushmore</b> in <b>Operations</b>.
+                    </ll>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Test (2) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingTest">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Test" aria-expanded="false" aria-controls="panelMainQuest-Test">
+                  <i class="fa-solid fa-house-lock me-3"></i>
+                  <span> Test the Emergency Broadcast System</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Test" class="accordion-collapse collapse" aria-labelledby="panelMainQuest-headingTest">
+                <div class="accordion-body">
+                  <ol style="list-style-type: lower-alpha;">
+                    <li>
+                      Obtain the <b>Galvaknuckles</b> and kill a zombie using it near a <b>static TV</b> somewhere in the Bunker.
+                      The TV can be in <b>Beds</b>, <b>Diner</b>, or the <b>Lounge</b>. The screen of the TV will be <b>white</b>.
+                      <span class="info" title="The time the clock gives you is 6:15 you would enter 0615 into Rushmore."></span>
+                    </li>
+                    <li style="display: block;">
+                      <table class="table table-dark table-hover border border-1">
+                        <tr>
+                          <th class="bg-dark" colspan="9">Clock Times</th>
+                        </tr>
+                        <tr>
+                          <th class="bg-secondary" colspan="3">Set 1</th>
+                          <th class="bg-secondary" colspan="3">Set 2</th>
+                          <th class="bg-secondary" colspan="3">Set 3</th>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>D</code></td>
+                          <td class="bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>0745</code></td>
+                          <td class="overflow-hidden border-end-1 bg-danger bg-opacity-75 text-wrap text-center align-middle"><i>Transfusion Facility</i></td>
+                          <td class="border-top border-start border-bottom yellow-house fs-5 text-center align-middle"><code>A</code></td>
+                          <td class="yellow-house fs-5 text-center align-middle"><code>1100</code></td>
+                          <td class="overflow-hidden yellow-house text-wrap text-center align-middle"><i>Yellow House</i></td>
+                          <td class="border-top border-start border-bottom fs-5 text-center align-middle"><code>E</code></td>
+                          <td class="fs-5 text-center align-middle"><code>0215</code></td>
+                          <td class="overflow-hidden text-wrap text-center align-middle"><i>Operations</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom bg-light bg-opacity-75 fs-5 text-center align-middle"><code>C</code></td>
+                          <td class="bg-light bg-opacity-75 fs-5 text-center align-middle"><code>0615</code></td>
+                          <td class="overflow-hidden bg-light bg-opacity-75 text-wrap text-center align-middle"><i>Prisoner Holding</i></td>
+                          <td class="border-top border-start border-bottom bg-info bg-opacity-75 fs-5 text-center align-middle"><code>F</code></td>
+                          <td class="bg-info bg-opacity-75 fs-5 text-center align-middle"><code>0530</code></td>
+                          <td class="overflow-hidden bg-info bg-opacity-75 text-wrap text-center align-middle"><i>APD Interrogation</i></td>
+                          <td class="border-top border-start border-bottom yellow-house fs-5 text-center align-middle"><code>A</code></td>
+                          <td class="yellow-house fs-5 text-center align-middle"><code>0245</code></td>
+                          <td class="overflow-hidden yellow-house text-wrap text-center align-middle"><i>Yellow House</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom bg-info bg-opacity-75 fs-5 text-center align-middle"><code>F</code></td>
+                          <td class="bg-info bg-opacity-75 fs-5 text-center align-middle"><code>0115</code></td>
+                          <td class="overflow-hidden bg-info bg-opacity-75 text-wrap text-center align-middle"><i>APD Interrogation</i></td>
+                          <td class="border-top border-start border-bottom bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>D</code></td>
+                          <td class="bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>0345</code></td>
+                          <td class="overflow-hidden bg-danger bg-opacity-75 text-wrap text-center align-middle"><i>Transfusion Facility</i></td>
+                          <td class="border-top border-start border-bottom bg-light bg-opacity-75 fs-5 text-center align-middle"><code>C</code></td>
+                          <td class="bg-light bg-opacity-75 fs-5 text-center align-middle"><code>1200</code></td>
+                          <td class="overflow-hidden bg-light bg-opacity-75 text-wrap text-center align-middle"><i>Prisoner Holding</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom yellow-house fs-5 text-center align-middle"><code>A</code></td>
+                          <td class="yellow-house fs-5 text-center align-middle"><code>0230</code></td>
+                          <td class="overflow-hidden yellow-house text-wrap text-center align-middle"><i>Yellow House</i></td>
+                          <td class="border-top border-start border-bottom fs-5 text-center align-middle"><code>E</code></td>
+                          <td class="fs-5 text-center align-middle"><code>0945</code></td>
+                          <td class="overflow-hidden text-wrap text-center align-middle"><i>Operations</i></td>
+                          <td class="border-top border-start border-bottom green-house fs-5 text-center align-middle"><code>B</code></td>
+                          <td class="green-house fs-5 text-center align-middle"><code>1015</code></td>
+                          <td class="overflow-hidden green-house text-wrap text-center align-middle"><i>Green House</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom fs-5 text-center align-middle"><code>E</code></td>
+                          <td class="fs-5 text-center align-middle"><code>0300</code></td>
+                          <td class="overflow-hidden text-wrap text-center align-middle"><i>Operations</i></td>
+                          <td class="border-top border-start border-bottom bg-light bg-opacity-75 fs-5 text-center align-middle"><code>C</code></td>
+                          <td class="bg-light bg-opacity-75 fs-5 text-center align-middle"><code>0400</code></td>
+                          <td class="overflow-hidden bg-light bg-opacity-75 text-wrap text-center align-middle"><i>Prisoner Holding</i></td>
+                          <td class="border-top border-start border-bottom bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>D</code></td>
+                          <td class="bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>0900</code></td>
+                          <td class="overflow-hidden bg-danger bg-opacity-75 text-wrap text-center align-middle"><i>Transfusion Facility</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom green-house fs-5 text-center align-middle"><code>B</code></td>
+                          <td class="green-house fs-5 text-center align-middle"><code>-</code></td>
+                          <td class="overflow-hidden green-house text-wrap text-center align-middle"><i>Green House</i></td>
+                          <td class="border-top border-start border-bottom green-house fs-5 text-center align-middle"><code>B</code></td>
+                          <td class="green-house fs-5 text-center align-middle"><code>-</code></td>
+                          <td class="overflow-hidden green-house text-wrap text-center align-middle"><i>Green House</i></td>
+                          <td class="border-top border-start border-bottom bg-info bg-opacity-75 fs-5 text-center align-middle"><code>F</code></td>
+                          <td class="bg-info bg-opacity-75 fs-5 text-center align-middle"><code>-</code></td>
+                          <td class="overflow-hidden bg-info bg-opacity-75 text-wrap text-center align-middle"><i>APD Interrogation</i></td>
+                        </tr>
+                        <tr>
+                          <th class="bg-secondary" colspan="3">Set 4</th>
+                          <th class="bg-secondary" colspan="3">Set 5</th>
+                          <th class="bg-secondary" colspan="3">Set 6</th>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom fs-5 text-center align-middle"><code>E</code></td>
+                          <td class="fs-5 text-center align-middle"><code>1045</code></td>
+                          <td class="overflow-hidden text-wrap text-center align-middle"><i>Operations</i></td>
+                          <td class="border-top border-start border-bottom bg-light bg-opacity-75 fs-5 text-center align-middle"><code>C</code></td>
+                          <td class="bg-light bg-opacity-75 fs-5 text-center align-middle"><code>0645</code></td>
+                          <td class="overflow-hidden bg-light bg-opacity-75 text-wrap text-center align-middle"><i>Prisoner Holding</i></td>
+                          <td class="border-top border-start border-bottom bg-info bg-opacity-75 fs-5 text-center align-middle"><code>F</code></td>
+                          <td class="bg-info bg-opacity-75 fs-5 text-center align-middle"><code>0930</code></td>
+                          <td class="overflow-hidden bg-info bg-opacity-75 text-wrap text-center align-middle"><i>APD Interrogation</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom green-house fs-5 text-center align-middle"><code>B</code></td>
+                          <td class="green-house fs-5 text-center align-middle"><code>0600</code></td>
+                          <td class="overflow-hidden green-house text-wrap text-center align-middle"><i>Green House</i></td>
+                          <td class="border-top border-start border-bottom bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>D</code></td>
+                          <td class="bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>0515</code></td>
+                          <td class="overflow-hidden bg-danger bg-opacity-75 text-wrap text-center align-middle"><i>Transfusion Facility</i></td>
+                          <td class="border-top border-start border-bottom bg-light bg-opacity-75 fs-5 text-center align-middle"><code>C</code></td>
+                          <td class="bg-light bg-opacity-75 fs-5 text-center align-middle"><code>1015</code></td>
+                          <td class="overflow-hidden bg-light bg-opacity-75 text-wrap text-center align-middle"><i>Prisoner Holding</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom bg-info bg-opacity-75 fs-5 text-center align-middle"><code>F</code></td>
+                          <td class="bg-info bg-opacity-75 fs-5 text-center align-middle"><code>1145</code></td>
+                          <td class="overflow-hidden bg-info bg-opacity-75 text-wrap text-center align-middle"><i>APD Interrogation</i></td>
+                          <td class="border-top border-start border-bottom yellow-house fs-5 text-center align-middle"><code>A</code></td>
+                          <td class="yellow-house fs-5 text-center align-middle"><code>1200</code></td>
+                          <td class="overflow-hidden yellow-house text-wrap text-center align-middle"><i>Yellow House</i></td>
+                          <td class="border-top border-start border-bottom bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>D</code></td>
+                          <td class="bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>0815</code></td>
+                          <td class="overflow-hidden bg-danger bg-opacity-75 text-wrap text-center align-middle"><i>Transfusion Facility</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>D</code></td>
+                          <td class="bg-danger bg-opacity-75 fs-5 text-center align-middle"><code>0830</code></td>
+                          <td class="overflow-hidden bg-danger bg-opacity-75 text-wrap text-center align-middle"><i>Transfusion Facility</i></td>
+                          <td class="border-top border-start border-bottom bg-info bg-opacity-75 fs-5 text-center align-middle"><code>F</code></td>
+                          <td class="bg-info bg-opacity-75 fs-5 text-center align-middle"><code>0830</code></td>
+                          <td class="overflow-hidden bg-info bg-opacity-75 text-wrap text-center align-middle"><i>APD Interrogation</i></td>
+                          <td class="border-top border-start border-bottom fs-5 text-center align-middle"><code>E</code></td>
+                          <td class="fs-5 text-center align-middle"><code>1130</code></td>
+                          <td class="overflow-hidden text-wrap text-center align-middle"><i>Operations</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom bg-light bg-opacity-75 fs-5 text-center align-middle"><code>C</code></td>
+                          <td class="bg-light bg-opacity-75 fs-5 text-center align-middle"><code>1215</code></td>
+                          <td class="overflow-hidden bg-light bg-opacity-75 text-wrap text-center align-middle"><i>Prisoner Holding</i></td>
+                          <td class="border-top border-start border-bottom green-house fs-5 text-center align-middle"><code>B</code></td>
+                          <td class="green-house fs-5 text-center align-middle"><code>0300</code></td>
+                          <td class="overflow-hidden green-house text-wrap text-center align-middle"><i>Green House</i></td>
+                          <td class="border-top border-start border-bottom green-house fs-5 text-center align-middle"><code>B</code></td>
+                          <td class="green-house fs-5 text-center align-middle"><code>0445</code></td>
+                          <td class="overflow-hidden green-house text-wrap text-center align-middle"><i>Green House</i></td>
+                        </tr>
+                        <tr>
+                          <td class="border-top border-start border-bottom yellow-house fs-5 text-center align-middle"><code>A</code></td>
+                          <td class="yellow-house fs-5 text-center align-middle"><code>-</code></td>
+                          <td class="overflow-hidden yellow-house text-wrap text-center align-middle"><i>Yellow House</i></td>
+                          <td class="border-top border-start border-bottom fs-5 text-center align-middle"><code>E</code></td>
+                          <td class="fs-5 text-center align-middle"><code>-</code></td>
+                          <td class="overflow-hidden text-wrap text-center align-middle"><i>Operations</i></td>
+                          <td class="border-top border-start border-bottom yellow-house fs-5 text-center align-middle"><code>A</code></td>
+                          <td class="yellow-house fs-5 text-center align-middle"><code>-</code></td>
+                          <td class="overflow-hidden yellow-house text-wrap text-center align-middle"><i>Yellow House</i></td>
+                        </tr>
+                      </table>
+                    </li>
+                  </ol>
+                  <ol style="list-style-type: lower-alpha;">
+                    <li>
+                      <p>
+                        Obtain the <b>Galvaknuckles</b> and kill a zombie using it near a <b>static TV</b> somewhere in the
+                        <b>Bunker</b>. The TV can be in <b>Beds</b>, <b>Diner</b>, or the <b>Lounge</b>. The screen of the TV will
+                        be <b>white</b>. <span class="info"
+                          title="The time the clock gives you is 6:15 you would enter 0615 into Rushmore."></span>
+                      </p>
+                    </li>
+                    <li style="display: block;">
+                      <details>
+                        <summary><b>Clock Times</b></summary>
+                        <table class="table table-dark table-hover">
+                          <tr>
+                            <th colspan="3">Set 1</th>
+                            <th colspan="3">Set 2</th>
+                            <th colspan="3">Set 3</th>
+                          </tr>
+                          <tr>
+                            <td><code>D</code></td>
+                            <td><code>0745</code></td>
+                            <td><i>Transfusion Facility</i></td>
+                            <td><code>A</code></td>
+                            <td><code>1100</code></td>
+                            <td><i>Yellow House</i></td>
+                            <td><code>E</code></td>
+                            <td><code>0215</code></td>
+                            <td><i>Operations</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>C</code></td>
+                            <td><code>0615</code></td>
+                            <td><i>Prisoner Holding</i></td>
+                            <td><code>F</code></td>
+                            <td><code>0530</code></td>
+                            <td><i>APD Interrogation</i></td>
+                            <td><code>A</code></td>
+                            <td><code>0245</code></td>
+                            <td><i>Yellow House</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>F</code></td>
+                            <td><code>0115</code></td>
+                            <td><i>APD Interrogation</i></td>
+                            <td><code>D</code></td>
+                            <td><code>0345</code></td>
+                            <td><i>Transfusion Facility</i></td>
+                            <td><code>C</code></td>
+                            <td><code>1200</code></td>
+                            <td><i>Prisoner Holding</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>A</code></td>
+                            <td><code>0230</code></td>
+                            <td><i>Yellow House</i></td>
+                            <td><code>E</code></td>
+                            <td><code>0945</code></td>
+                            <td><i>Operations</i></td>
+                            <td><code>B</code></td>
+                            <td><code>1015</code></td>
+                            <td><i>Green House</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>E</code></td>
+                            <td><code>0300</code></td>
+                            <td><i>Operations</i></td>
+                            <td><code>C</code></td>
+                            <td><code>0400</code></td>
+                            <td><i>Prisoner Holding</i></td>
+                            <td><code>D</code></td>
+                            <td><code>0900</code></td>
+                            <td><i>Transfusion Facility</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>B</code></td>
+                            <td><code>-</code></td>
+                            <td><i>Green House</i></td>
+                            <td><code>B</code></td>
+                            <td><code>-</code></td>
+                            <td><i>Green House</i></td>
+                            <td><code>F</code></td>
+                            <td><code>-</code></td>
+                            <td><i>APD Interrogation</i></td>
+                          </tr>
+                          <tr>
+                            <th colspan="3">Set 4</th>
+                            <th colspan="3">Set 5</th>
+                            <th colspan="3">Set 6</th>
+                          </tr>
+                          <tr>
+                            <td><code>E</code></td>
+                            <td><code>1045</code></td>
+                            <td><i>Operations</i></td>
+                            <td><code>C</code></td>
+                            <td><code>0645</code></td>
+                            <td><i>Prisoner Holding</i></td>
+                            <td><code>F</code></td>
+                            <td><code>0930</code></td>
+                            <td><i>APD Interrogation</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>B</code></td>
+                            <td><code>0600</code></td>
+                            <td><i>Green House</i></td>
+                            <td><code>D</code></td>
+                            <td><code>0515</code></td>
+                            <td><i>Transfusion Facility</i></td>
+                            <td><code>C</code></td>
+                            <td><code>1015</code></td>
+                            <td><i>Prisoner Holding</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>F</code></td>
+                            <td><code>1145</code></td>
+                            <td><i>APD Interrogation</i></td>
+                            <td><code>A</code></td>
+                            <td><code>1200</code></td>
+                            <td><i>Yellow House</i></td>
+                            <td><code>D</code></td>
+                            <td><code>0815</code></td>
+                            <td><i>Transfusion Facility</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>D</code></td>
+                            <td><code>0830</code></td>
+                            <td><i>Transfusion Facility</i></td>
+                            <td><code>F</code></td>
+                            <td><code>0830</code></td>
+                            <td><i>APD Interrogation</i></td>
+                            <td><code>E</code></td>
+                            <td><code>1130</code></td>
+                            <td><i>Operations</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>C</code></td>
+                            <td><code>1215</code></td>
+                            <td><i>Prisoner Holding</i></td>
+                            <td><code>B</code></td>
+                            <td><code>0300</code></td>
+                            <td><i>Green House</i></td>
+                            <td><code>B</code></td>
+                            <td><code>0445</code></td>
+                            <td><i>Green House</i></td>
+                          </tr>
+                          <tr>
+                            <td><code>A</code></td>
+                            <td><code>-</code></td>
+                            <td><i>Yellow House</i></td>
+                            <td><code>E</code></td>
+                            <td><code>-</code></td>
+                            <td><i>Operations</i></td>
+                            <td><code>A</code></td>
+                            <td><code>-</code></td>
+                            <td><i>Yellow House</i></td>
+                          </tr>
+                        </table>
+                      </details>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Pursue (3) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingPursue">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Pursue" aria-expanded="false" aria-controls="panelMainQuest-Pursue">
+                  <i class="fa-solid fa-vial-virus me-3"></i>
+                  <span> Pursue All Avenues of Science and Invention</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Pursue" class="accordion-collapse collapse" aria-labelledby="panelMainQuest-headingPursue">
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      <b>Rushmore</b> will now tell you to find a <b class="text-danger">red Nova Six Crawler</b> somewhere around the map.
+                    </li>
+                    <li>
+                      Locate the <b class="text-danger">Nova Six Crawler</b> and make him follow you to the <b>Transfusion Facility</b> so he crawls into <a
+                        href="https://i.imgur.com/zkJZWbt.png" rel="nofollow">this barrier here</a>.
+                    </li>
+                    <li>
+                      <span class="text-warning">Make sure to not let it die before it gets there.</span>
+                    </li>
+                    <li>
+                      After you've successfully delivered the crawler, report back to <b>Operations</b>
+                      and interact with <b>Rushmore</b>.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Preserve (4) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingPreserve">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Preserve" aria-expanded="false" aria-controls="panelMainQuest-Preserve">
+                  <i class="fa-solid fa-boxes-packing me-3"></i>
+                  <span> Preserve the Integrity of our Mission</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Preserve" class="accordion-collapse collapse"
+                aria-labelledby="panelMainQuest-headingPreserve">
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      <p>
+                        Head to <b>Storage</b> and activate <b>A.D.A.M.</b> and bring him to the bunker stairs between the
+                        <b>Green House</b> and <b>Diner</b> (<a href="https://i.imgur.com/fH8eiwx.png">Here</a>).
+                      </p>
+                      <table class="table table-dark table-hover align-middle">
+                        <tr>
+                          <th class="bg-primary" colspan="4">Operation Toy Soldier (A.D.A.M.)</th>
+                        </tr>
+                        <tr>
+                          <th class="text-center bg-secondary w-25">Toy Soldier</th>
+                          <th class="text-center bg-secondary w-25">Sawyer</th>
+                          <th class="text-center bg-secondary w-25">Peter McCain</th>
+                          <th class="text-center bg-secondary w-25">Pernell</th>
+                        </tr>
+                        <tr>
+                          <td class="border border-primary p-1 align-middle text-center bg-info bg-opacity-75">
+                            <span class="align-middle fs-5">
+                              <span class="material-symbols-outlined align-middle fs-5">
+                                dialpad
+                              </span>
+                              <span class="font-monospace fw-semibold">7 6 2 6</span>
+                            </span>
+                          </td>
+                          <td class="text-center"><i>APD Interrogation</i></td>
+                          <td class="text-center"><i>APD Control</i></td>
+                          <td class="text-center"><i>Solitary</i></td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li>
+                      <p>
+                        Once the <b>A.D.A.M. Unit</b> is close to the door, <i>Marlton</i> will react to him and give you a <b>115
+                          Canister</b>.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Bring the <b>115 Canister</b> to <a href="https://i.imgur.com/ijm2E9J.png">this shelf</a> in
+                        <b>Transfusion Facility</b> by interacting with the shelf.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Once it's placed head back to <b>Operations</b> and interact with <b>Rushmore</b>.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Prevail (5) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingPrevail">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Prevail" aria-expanded="false" aria-controls="panelMainQuest-Prevail">
+                  <i class="fa-solid fa-server me-3"></i>
+                  <span> Prevail over the Impossible to Open New Worlds</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Prevail" class="accordion-collapse collapse"
+                aria-labelledby="panelMainQuest-headingPrevail">
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      Go to the <b>Power House</b> and get a <b>Jolting Jack</b> to fire an electric blast at <a
+                        href="https://i.imgur.com/kgnOGsw.png">this server core</a>. Once it does, you'll be able to remove the
+                      core and quickly bring it to <a href="https://i.imgur.com/GpvJlfe.png" rel="nofollow">the core slot in
+                        Operations</a> before the timer runs out.
+                      <ol style="list-style-type: lower-alpha;">
+                        <li>
+                          <b>Telepads</b>
+                          <ol>
+                            <li class="mb-0">
+                              Place a <b>telepad</b> at each of the following locations:
+                            </li>
+                            <ul style="list-style-type: circle;">
+                              <li class="m-0">
+                                <a href="https://i.imgur.com/0u0lLbj.png" rel="nofollow">Outside of Prisoner Holding</a>
+                              </li>
+                              <li class="m-0">
+                                <a href="https://i.imgur.com/KVdUt0l.png" rel="nofollow">Next to the core in the Power House</a>
+                              </li>
+                            </ul>
+                            <li class="m-0">
+                              Quickly grab the core and use the telepads to get to <b>Operations</b>.
+                            </li>
+                          </ol>
+                        </li>
+                        <li>
+                          <b>Katana (Path of Sorrows)</b>
+                          <ul>
+                            <li>
+                              Instead of placing and using the telepads, you can instead use the <b>Path of Sorrows</b>
+                              <b>Merciless Dash</b> ability.
+                              <ul>
+                                <li>
+                                  <b>Note:</b> <i>In order to use this ability, your <b>Path of Sorrows</b> specialist level must be at
+                                  least <b>level 2</b>.</i>
+                                </li>
+                              </ul>
+                            </li>
+                          </ul>
+                        </li>
+                      </ol>
+                    </li>
+                    <li>
+                      <p>
+                        Around the Bunker there will be pictures on the walls with a <b>green mist</b> coming from them. What you
+                        must do is use the <b>Brain Rot</b> Alternate Ammo Type (AAT) on a packed weapon and get a <b>Brain
+                          Rot</b> zombie to go near the pictures. If done correctly, they will knock the pictures down and reveal
+                        a 4 digit code.
+                      </p>
+                      <table class="table table-dark table-hover align-middle">
+                        <tr>
+                          <th colspan="3" class="p-1 bg-primary">Paintings</th>
+                        </tr>
+                        <tr>
+                          <th>Green House Upstairs</th>
+                          <th>Lounge</th>
+                          <th>Beds</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/duuf3hs.png">
+                                <img src="https://i.imgur.com/duuf3hs.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/mxICQUQ.png">
+                                <img src="https://i.imgur.com/mxICQUQ.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/C31jBK1.png">
+                                <img src="https://i.imgur.com/C31jBK1.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li>
+                      <p>
+                        After obtaining the three codes, input them into <b>Rushmore</b> in quick succession. Once completed,
+                        interact with <b>Rushmore</b>.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Protect (6) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingProtect">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Protect" aria-expanded="false" aria-controls="panelMainQuest-Protect">
+                  <i class="fa-solid fa-plug-circle-bolt me-3"></i>
+                  <span> Protect the Values of the American Dream</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Protect" class="accordion-collapse collapse"
+                aria-labelledby="panelMainQuest-headingProtect">
+                <div class="accordion-body">
+                  <ol style="list-style-type: lower-roman;">
+                    <li>
+                      <p>
+                        The power will now go out around the map. There are now <b>6 interactable power switches</b> with lights
+                        above them around the Bunker. You must set each switch to it's correct position. Once all switches have been
+                        set an <b>audio cue</b> will play and the lights above the switches will all be <b>green</b>.
+                      </p>
+                      <table class="table table-dark table-hover m-1 align-middle">
+                        <tr>
+                          <th colspan="3">
+                            <div class="row">
+                              <div class="col">
+                                <i class="fa-solid fa-arrow-up"></i>
+                              </div>
+                              <div class="col-10">
+                                <span class="text-center">Up</span>
+                              </div>
+                              <div class="col">
+                                <i class="fa-solid fa-arrow-up"></i>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>Diner</th>
+                          <th>Beds</th>
+                          <th>Generators</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/AtsVKAg.png">
+                                <img src="https://i.imgur.com/AtsVKAg.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/VWwp0S3.png">
+                                <img src="https://i.imgur.com/VWwp0S3.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/w4CNO8x.png">
+                                <img src="https://i.imgur.com/w4CNO8x.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                        <tr>
+                          <th colspan="3">
+                            <div class="row">
+                              <div class="col">
+                                <i class="fa-solid fa-arrow-down"></i>
+                              </div>
+                              <div class="col-10">
+                                <span class="text-center">Down</span>
+                              </div>
+                              <div class="col">
+                                <i class="fa-solid fa-arrow-down"></i>
+                              </div>
+                            </div>
+                          </th>
+                        </tr>
+                        <tr>
+                          <th>Solitary</th>
+                          <th>Storage</th>
+                          <th>Lounge</th>
+                        </tr>
+                        <tr>
+                          <td style="width: 33%;">
+                            <a href="https://i.imgur.com/3Ad9poB.png">
+                              <img src="https://i.imgur.com/3Ad9poB.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                            </a>
+                          </td>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/uEwVYGH.png">
+                                <img src="https://i.imgur.com/uEwVYGH.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                          <td style="width: 33%;">
+                            <div class="ratio ratio-16x9">
+                              <a href="https://i.imgur.com/sBr3wBU.png">
+                                <img src="https://i.imgur.com/sBr3wBU.png" referrerpolicy="no-referrer" class="img-fluid" style="width: 1280px;" />
+                              </a>
+                            </div>
+                          </td>
+                        </tr>
+                      </table>
+                    </li>
+                    <li>
+                      Once all of the lights on the switches are green, an <b>audio cue</b> will play and you can head to the
+                      <b>Power House</b> to <b>turn on the power</b>. After power is restored, head to <b>Operations</b> and
+                      interact with <b>Rushmore</b>.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Prepare (7) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingPrepare">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Prepare" aria-expanded="false" aria-controls="panelMainQuest-Prepare">
+                  <i class="fa-solid fa-person-rays me-3"></i>
+                  <span> Prepare for Tomorrow and Humanity's Future</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Prepare" class="accordion-collapse collapse"
+                aria-labelledby="panelMainQuest-headingPrepare">
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      Around the map there will be <b>3</b> newly-spawned <b>mannequins</b>. One of the mannequins will be
+                      <b>glowing blue</b>. Each player must go to the area the mannequin is in and interact with it to start a
+                      defense wave. After enough time has passed, the mannequin will break, leaving behind a part for you to pick
+                      up. Repeat this process two additional times after which you will have picked up <b>two arms</b> and a
+                      <b>head</b>.
+                    </li>
+                    <li>
+                      With all 3 parts in hand, bring them to the <b>broken mannequin</b> in the chair at <b>APD
+                        Interrogation</b>.
+                    </li>
+                    <li>
+                      <span>
+                        Once the mannequin has been revived, <b>Rushmore</b> will then tell you to go find an <b>Elemental Orb</b>
+                        around the map. Once you find the orb, you must then escort it around the map until it gets to <b>APD
+                          Interrogation</b>.
+                      </span>
+                      <ul>
+                        <li class="m-0">
+                          <i class="fa-solid fa-lightbulb text-info me-1"></i> This is a good time to use either of the slow zombie codes.
+                          <ul>
+                            <li class="m-0 text-info"><code>NOOB</code> [<code>6662</code>]</li>
+                            <li class="m-0 text-info"><code>EASY</code> [<code>3279</code>]</li>
+                            <li class="m-0">
+                              <i class="fa-solid fa-triangle-exclamation text-warning me-1"></i> Only one code of a given type can be activated per-game.
+                            </li>
+                          </ul>
+                        </li>
+                      </ul>
+                    </li>
+                    <li>
+                      Whenever you're ready, head to <b>APD Control</b> and have every player interact with the computer to start
+                      the boss fight.
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Overwhelm (8) -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelMainQuest-headingBoss">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelMainQuest-Boss" aria-expanded="false" aria-controls="panelMainQuest-Boss">
+                  <i class="fa-solid fa-bolt me-3"></i>
+                  <span> Avogadro Boss Fight</span>
+                </button>
+              </h2>
+              <div id="panelMainQuest-Boss" class="accordion-collapse collapse" aria-labelledby="panelMainQuest-headingBoss">
+                <div class="accordion-body">
+                  <ol style="list-style-type: lower-roman;">
+                    <li>
+                      <p>
+                        Kill mannequins around the <b>APD Control</b> area to fill up the <b>empty soul canisters</b>. Once full,
+                        the door of the APD will open, revealing the <b>Avogadro</b>.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Once the Nuke has landed, leave the <b>APD Control</b> area and find the backup soul canisters around the
+                        bunker. When you find a canister you must have every player in your game go in that area and have 1 person
+                        interact with the canister to allow it to be filled with souls. While you are attempting to fill the
+                        canisters the <b>Avogadro</b> will attack you. Once you have filled it with enough souls an <b>audio
+                          cue</b> will play and then electricity will fill that room, blocking you access to it.
+                      </p>
+                      <details>
+                        <summary><b>Canister Locations</b></summary>
+                        <table class="table">
+                          <tr>
+                            <th width="25%">Beds</th>
+                            <th width="25%">Storage</th>
+                            <th width="25%">Diner</th>
+                            <th width="25%">Lounge</th>
+                          </tr>
+                          <tr>
+                            <td align="center">
+                              <a href="https://i.imgur.com/g0YlW6I.png">
+                                <img src="https://i.imgur.com/g0YlW6I.png" />
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="https://i.imgur.com/MCAGDEs.png">
+                                <img src="https://i.imgur.com/MCAGDEs.png" />
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="https://i.imgur.com/3SwATaU.png">
+                                <img src="https://i.imgur.com/3SwATaU.png" />
+                              </a>
+                            </td>
+                            <td align="center">
+                              <a href="https://i.imgur.com/UYICmn5.png">
+                                <img src="https://i.imgur.com/UYICmn5.png" />
+                              </a>
+                            </td>
+                          </tr>
+                        </table>
+                      </details>
+                    </li>
+                    <li>
+                      <p>
+                        Once all 4 canisters have been filled, head back to <b>APD Control</b>. When <b>Avogadro</b> is close,
+                        start shooting him to make him move in the direction you're shooting. You must shoot him so that he gets
+                        in <b>front of the APD door</b>. Once he is in front he will be sucked into the APD.
+                      </p>
+                    </li>
+                    <li>
+                      <p>After securing <b>Avogadro</b> back in the APD, head over to the central panel to initiate the prisoner
+                        transfer.</p>
+                    </li>
+                    <li>
+                      <p>
+                        After <b>Rushmore</b> is done talking the APD door will open and you're able to pick up the <b>Elemental
+                          Shard</b>. As soon as that's done, a cutscene will play and the game will end.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 class="my-3 subcategory">
+          <i class="fa-solid fa-egg"></i>
+          <span>Easter Eggs</span>
+        </h4>
+        <div>
+          <div class="accordion">
+            <!-- Rushmore Secret Codes -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingRushmoreCodes">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelEE-RushmoreCodes" aria-expanded="false" aria-controls="panelEE-RushmoreCodes">
+                  <i class="fa-solid fa-terminal me-3"></i>
+                  <span> Rushmore Secret Codes</span>
+                </button>
+              </h2>
+              <div id="panelEE-RushmoreCodes" class="accordion-collapse collapse" aria-labelledby="panelEE-headingRushmoreCodes">
+                <div class="accordion-body">
+                  <div>
+                    <p>
+                      After activating <b>Rushmore</b>, you can use the keypad next to him for free powerups, lore, and more. You
+                      are also only able to activate <b>1 code from this list per round</b> (codes required for the <i>Main
+                        Quest</i> do <b>not</b> have the round limitation).
+                    </p>
+                    <table class="table table-dark">
+                      <thead>
+                        <tr>
+                          <th>Word</th>
+                          <th>Numbers</th>
+                          <th>Description</th>
+                          <th>Word</th>
+                          <th>Numbers</th>
+                          <th>Description</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td><code>Easy</code></td>
+                          <td><code>3279</code></td>
+                          <td><i>Takes zombies speed down to slowest speed for 5 minutes</i></td>
+                          <td><code>Noob</code></td>
+                          <td><code>6662</code></td>
+                          <td><i>Takes zombies speed down to slowest speed for 5 minutes</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Brew</code></td>
+                          <td><code>2739</code></td>
+                          <td><i>Brew perk is now 50% cheaper</i></td>
+                          <td><code>Life</code></td>
+                          <td><code>5433</code></td>
+                          <td><i>A quote plays about only having 1 life</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Soda</code></td>
+                          <td><code>7632</code></td>
+                          <td><i>Soda perk is now 50% cheaper</i></td>
+                          <td><code>Puke</code></td>
+                          <td><code>7853</code></td>
+                          <td><i>When you melee a zombies they will puke</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Cola</code></td>
+                          <td><code>2652</code></td>
+                          <td><i>Cola perk is now 50% cheaper</i></td>
+                          <td><code>Fall</code></td>
+                          <td><code>3255</code></td>
+                          <td><i>When you look at zombies they will fall down</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Pack</code></td>
+                          <td><code>7225</code></td>
+                          <td><i>Spawns a Bonfire Sale power-up</i></td>
+                          <td><code>Ugly</code></td>
+                          <td><code>8459</code></td>
+                          <td><i>Rushmore tells you you are beautiful</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Time</code></td>
+                          <td><code>8463</code></td>
+                          <td><i>Freezes zombies for 30 seconds</i></td>
+                          <td><code>Hero</code></td>
+                          <td><code>4376</code></td>
+                          <td><i>Fills up your specialist charge meter</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Boom</code></td>
+                          <td><code>2666</code></td>
+                          <td><i>Spawns a live Grenade</i></td>
+                          <td><code>Yawn</code></td>
+                          <td><code>9296</code></td>
+                          <td><i>Rushmore talks about how you're bored</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Nuke</code></td>
+                          <td><code>6853</code></td>
+                          <td><i>Spawns a Nuke power-up</i></td>
+                          <td><code>Warp</code></td>
+                          <td><code>9277</code></td>
+                          <td><i>Teleports the player to a random location</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Door</code></td>
+                          <td><code>3667</code></td>
+                          <td><i>Makes one random door that isn't open cost 0 Points</i></td>
+                          <td><code>Club</code></td>
+                          <td><code>2582</code></td>
+                          <td><i>The Beds area will have a disco theme and club music will be playing in the area</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Love</code></td>
+                          <td><code>5683</code></td>
+                          <td><i>Professes your love to Rushmore</i></td>
+                          <td><code>Grav</code></td>
+                          <td><code>4728</code></td>
+                          <td><i>Newtonian Negation (Zombies killed fall straight up, lasts for 25 minutes)</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Quiz</code></td>
+                          <td><code>1841</code></td>
+                          <td><i>Rushmore gives a Quiz that you cannot interact with</i></td>
+                          <td>-</td>
+                          <td><code>0001</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Joke</code></td>
+                          <td><code>5653</code></td>
+                          <td><i>Rushmore tells a Russian joke</i></td>
+                          <td>-</td>
+                          <td><code>0002</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Song</code></td>
+                          <td><code>7664</code></td>
+                          <td><i>Secret song plays</i></td>
+                          <td>-</td>
+                          <td><code>0003</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Tedd</code></td>
+                          <td><code>8333</code></td>
+                          <td><i>Activates T.E.D.D. in the Diner</i></td>
+                          <td>-</td>
+                          <td><code>0004</code></td>
+                          <td><i>???</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Duck</code></td>
+                          <td><code>3825</code></td>
+                          <td><i>When you melee zombies they make a duck sound</i></td>
+                          <td>-</td>
+                          <td><code>1001</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Guns</code></td>
+                          <td><code>4867</code></td>
+                          <td><i>Disorderly Combat (Every player in the game given a new gun every 10 seconds for 5 minutes)</i>
+                          </td>
+                          <td>-</td>
+                          <td><code>1002</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Bank</code></td>
+                          <td><code>2265</code></td>
+                          <td><i>Free 1000 points to all players</i></td>
+                          <td>-</td>
+                          <td><code>1003</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Rave</code></td>
+                          <td><code>7283</code></td>
+                          <td><i>Rave party starts in the Beds area</i></td>
+                          <td>-</td>
+                          <td><code>1004</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Vent</code></td>
+                          <td><code>8368</code></td>
+                          <td><i>Rushmore starts venting his frustration</i></td>
+                          <td>-</td>
+                          <td><code>1005</code></td>
+                          <td><i>Backstory</i></td>
+                        </tr>
+                        <tr>
+                          <td><code>Shed</code></td>
+                          <td><code>7433</code></td>
+                          <td><i>Opens shed door in the Yellow House Backyard for free</i></td>
+                          <td colspan="3"></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- "I Am The Well" Music Easter Egg -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingMusic">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelEE-Music"
+                  aria-expanded="false" aria-controls="panelEE-Music">
+                  <i class="fa-solid fa-music me-3"></i>
+                  <span> "I Am The Well" Music Easter Egg</span>
+                </button>
+              </h2>
+              <div id="panelEE-Music" class="accordion-collapse collapse" aria-labelledby="panelEE-headingMusic">
+                <div class="accordion-body">
+                  <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
+                    data-bs-parent="#accordionFlushExample">
+                    <div class="accordion-body">
+                      <ol>
+                        <li>
+                          <p>
+                            Activate a total of three mannequin heads found around the map. Once complete <a
+                              href="https://youtu.be/9TeATvJ07cw">"I Am the Well" by Kevin Sherwood and Clark S. Nova</a> will
+                            begin
+                            to play.
+                          </p>
+                          <table class="table table-dark table-hover align-middle">
+                            <tr>
+                              <th colspan="3">Mannequin Heads</th>
+                            </tr>
+                            <tr>
+                              <th>Green House</th>
+                              <td>Upstairs, right side of bed</td>
+                              <td><a href="https://i.imgur.com/YtxXHLk.jpg">View</a></td>
+                            </tr>
+                            <tr>
+                              <th>Solitary</th>
+                              <td>On the floor near the mattress across from the M1927 wallbuy</td>
+                              <td><a href="https://i.imgur.com/wHqa3ei.jpg">View</a></td>
+                            </tr>
+                            <tr>
+                              <th>Lounge</th>
+                              <td>Chair next to the pool table</td>
+                              <td><a href="https://i.imgur.com/GpVCPlA.jpg">View</a></td>
+                            </tr>
+                          </table>
+                          <p>
+                            You can also activate the song by inputting the numbers <code>7 6 6 4</code> into the key pad next to
+                            Rushmore.
+                          </p>
+                        </li>
+                      </ol>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Pernell/Avogadro Jump Scare -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingPernell">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelEE-Pernell" aria-expanded="false" aria-controls="panelEE-Pernell">
+                  <i class="fa-solid fa-crosshairs me-3"></i>
+                  <span> Pernell/Avogadro Jump Scare</span>
+                </button>
+              </h2>
+              <div id="panelEE-Pernell" class="accordion-collapse collapse" aria-labelledby="panelEE-headingPernell">
+                <div class="accordion-body">
+                  <div>
+                    <ol>
+                      <li>
+                        <p>
+                          Obtain a <b>scoped sniper rifle</b> and go to the balcony in the <b>Green House Backyard</b>.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Aim down the scope of the sniper rifle at the zombie located in <a
+                            href="https://i.imgur.com/Dn25v1y.png">this area</a> of the desert.
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Mannequin Jump Scare -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingMannequinScare">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelEE-MannequinScare" aria-expanded="false" aria-controls="panelEE-MannequinScare">
+                  <i class="fa-solid fa-hand-fist me-3"></i>
+                  <span> Mannequin Jump Scare</span>
+                </button>
+              </h2>
+              <div id="panelEE-MannequinScare" class="accordion-collapse collapse"
+                aria-labelledby="panelEE-headingMannequinScare">
+                <div class="accordion-body">
+                  <div>
+                    <ol>
+                      <li>
+                        <p>
+                          <b>Melee</b> the head off of every mannequin around the map using <b>Galvaknuckles</b> (If you don't use
+                          <b>Galvaknuckles</b> you won't be able to do this Easter Egg). If done correctly you should hear an
+                          <b>audio cue</b>.
+                        </p>
+                      </li>
+                      <li>
+                        <p>
+                          Head down to the <b>Beds</b> and directly right of the <b>Pack-a-Punch</b> machine will be a
+                          newly-spawned female mannequin with its head on backwards. If you look directly at the mannequin its head will quickly
+                          spin around and an image of a mannequin's face will cover your entire screen accompanied by a
+                          bloodcurdling scream.
+                        </p>
+                      </li>
+                    </ol>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- Free Self-Revive Love Story -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingLoveStory">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelEE-LoveStory" aria-expanded="false" aria-controls="panelEE-LoveStory">
+                  <i class="fa-solid fa-people-pulling me-3"></i>
+                  <span> Free Self-Revive Love Story</span>
+                </button>
+              </h2>
+              <div id="panelEE-LoveStory" class="accordion-collapse collapse" aria-labelledby="panelEE-headingLoveStory">
+                <div class="accordion-body">
+                  <ol>
+                    <li>
+                      Melee the head off of every mannequin around the map.
+                      <ul>
+                        <li>If done correctly you should hear <b>an audio cue</b>.</li>
+                      </ul>
+                    </li>
+                    <li>
+                      <p>
+                        Behind the Nuketown sign in the Cul-de-sac there will be a male mannequin, when you look at this mannequin
+                        it will stay still but if you look away from it it will run towards you. What you now must do is run down
+                        to
+                        the Generators area with the male mannequin following you and find a newly spawned headless female
+                        mannequin.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Once the 2 mannequins are united, if you look away from the mannequins they will start running towards the
+                        <b>Green House Backyard</b>. Follow them <b>without looking at them</b> and once they make it to the
+                        <b>shed</b> in the <b>Green House Backyard</b> they will go inside the shed. A free <b>Self-Revive</b>
+                        will
+                        now be waiting at the door to the shed and if you look into the side of the shed you can see that the
+                        female
+                        mannequin now has a head and the 2 mannequins look as if they are about to kiss.
+                      </p>
+                    </li>
+                  </ol>
+                </div>
+              </div>
+            </div>
+            <!-- Free Extra Perk -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingFreePerk">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelEE-FreePerk" aria-expanded="false" aria-controls="panelEE-FreePerk">
+                  <i class="fa-solid fa-people-group me-3"></i>
+                  <span> Free Extra Perk</span>
+                </button>
+              </h2>
+              <div id="panelEE-FreePerk" class="accordion-collapse collapse" aria-labelledby="panelEE-headingFreePerk">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <b>Shoot</b> the head off of every mannequin around the map. If done correctly, an <b>audio cue</b> will
+                      play.
+                    </li>
+                    <li>
+                      <p>
+                        The next round will now start with the announcer saying "<i><b>Rip Flesh from Bone</b></i>" and all the
+                        zombies will be replaced by mannequins that have a lot of health.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        After surviving the wave of mannequins, a perk power-up will fall from the sky in front of the Nuketown
+                        sign
+                        in the <b>Cul-de-sac</b>.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Insanity Mode -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="panelEE-headingInsanityMode">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#panelEE-InsanityMode" aria-expanded="false" aria-controls="panelEE-InsanityMode">
+                  <i class="fa-solid fa-skull-crossbones me-3"></i>
+                  <span> Insanity Mode</span>
+                </button>
+              </h2>
+              <div id="panelEE-InsanityMode" class="accordion-collapse collapse" aria-labelledby="panelEE-headingInsanityMode">
+                <div class="accordion-body">
+                  <ul>
+                    <li>
+                      <p>
+                        When the <a href="https://i.imgur.com/hWaWv2R.png">Clock in the Cul-de-sac</a> is on <b>1</b> and the <a
+                          href="https://i.imgur.com/pkIkCMi.png">Nuketown sign</a> population number is <b>15</b> there will be a
+                        purple orb that will spawn in the <a href="https://i.imgur.com/HkSJBI5.png">shed in the Yellow House
+                          Backyard</a>. Stand next to the orb while the number on the sign is <b>15</b> and it will start
+                        traveling.
+                        Stay close to the orb as it travels throughout the map (if you go too far away from the orb it will
+                        disappear and you will have to wait for the clock and sign to line up again). The orb will eventually
+                        reach
+                        <b>APD Interrogation</b> where it will go into a <a href="https://i.imgur.com/NkQzT6y.png">TV
+                          upstairs</a>.
+                        You must now break this TV using the melee of the <b>Bowie Knife</b> which will then cause a code to come
+                        out of the printer to the left of the TV.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        Once you input the code you're given into <b>Rushmore's</b> keypad, you have <b>1 minute</b> for every
+                        player to go to <b>Rushmore</b> and interact with him to start <b>Insanity Mode</b>.
+                      </p>
+                    </li>
+                    <li>
+                      <p>
+                        You will then be teleported to <b>Round 200</b> in the <b>Cul-de-sac</b> where you are confined to the
+                        layout of the original Nuketown Zombies map. Instrumental versions of different <i>Easter Egg</i> Songs
+                        will
+                        play and zombies will all be running at super-sprinter speed.
+                      </p>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h2 class="my-3 category">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <span>Reference</span>
+        </h2>
+      </div>
+      <div class="flex bg-primary border border-1 mt-3 ps-2 pt-3 py-2">
+        <h4 class="flex subcategory">Rushmore Codes</h4>
+      </div>
+      
+      <div>
+        <h2 class="my-3 category">
+          <i class="fa-solid fa-screwdriver-wrench"></i>
+          <span>Buildables</span>
+        </h2>
+        <div class="flex bg-primary border border-1 mt-3 ps-2 pt-3 py-2">
+          <h4 class="flex subcategory">Ray Gun Mark II</h4>
+        </div>
+        <div class="accordion">
+          <!-- Assembly Kit -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelRayGunMKII-headingAssemblyKit">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelRayGunMKII-AssemblyKit" aria-expanded="false" aria-controls="panelRayGunMKII-AssemblyKit">
+                <i class="fa-solid fa-toolbox me-3"></i>
+                <span> Assembly Kit</span>
+              </button>
+            </h2>
+            <div id="panelRayGunMKII-AssemblyKit" class="accordion-collapse collapse"
+              aria-labelledby="panelRayGunMKII-headingAssemblyKit">
+              <div class="accordion-body">
+                <ul>
+                  <li>Obtain the tubing part located in the <b>Yellow House</b>:
+                    <ul>
+                      <li><a href="https://i.imgur.com/HSn7q1n.jpg">Yellow House Downstairs on kitchen table</a></li>
+                      <li><a href="https://i.imgur.com/V3KOEGV.png">Yellow House Upstairs on lamp table</a></li>
+                      <li><a
+                          href="https://cdn.discordapp.com/attachments/302167706948337666/600458682718879811/Wire---Location-3.png">Yellow
+                          House Upstairs on book shelf</a></li>
+                    </ul>
+                  </li>
+                  <li>Obtain the Canister part in the <b>Storage</b>:
+                    <ul>
+                      <li><a href="https://i.imgur.com/AHkBiul.jpg">Storage on shelf</a></li>
+                      <li><a href="https://i.imgur.com/Sm49OI2.png">Storage on barrel near Generators tunnel</a></li>
+                      <li><a href="https://imgur.com/bjMmtkN">Storage on barrel near exit</a></li>
+                    </ul>
+                  </li>
+                  <li>Obtain the Container part in the <b>APD Control</b> or <b>Solitary</b>:
+                    <ul>
+                      <li><a href="https://i.imgur.com/OEgXkKf.jpg">APD Control on cart near Mystery Box</a></li>
+                      <li><a href="https://i.imgur.com/R8Q4dFB.jpg">APD Control on terminal chair</a></li>
+                      <li><a href="https://i.imgur.com/EfyyfYb.jpg">Solitary on desk with sitting mannequin</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <!-- Ray Gun Mark II Frame -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelRayGunMKII-headingFrame">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelRayGunMKII-Frame" aria-expanded="false" aria-controls="panelRayGunMKII-Frame">
+                <i class="fa-solid fa-gun me-3"></i>
+                <span> Ray Gun Mark II Frame</span>
+              </button>
+            </h2>
+            <div id="panelRayGunMKII-Frame" class="accordion-collapse collapse" aria-labelledby="panelRayGunMKII-headingFrame">
+              <div class="accordion-body">
+                <ol>
+                  <li>
+                    <p>
+                      Activate the <b>Pack-a-Punch</b>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Progress to the next round and navigate to <b>Operations</b> and interact with the computer to access
+                      <b>Rushmore</b>.
+                    </p>
+                  </li>
+                  <li>
+                    <p>
+                      Locate and interact with each of the <b>4 TVs</b> which display static and emit white noise, locations as
+                      follows. The
+                      locations of these TVs will not change, however the order which they must be activated will. Once
+                      activated,
+                      kill
+                      zombies near the TV to charge it. Upon completion a number will be display on the screen.
+                    </p>
+                    <ul>
+                      <li><a href="https://i.imgur.com/srS6V9n.png">Yellow House Backyard on table</a></li>
+                      <li><a href="https://i.imgur.com/ebQB0l4.png">APD Control on cart</a></li>
+                      <li><a href="https://i.imgur.com/6IsPXh2.png">Diner on divider</a></li>
+                      <li><a href="https://i.imgur.com/Usc8b6I.png">Site Entrance near yellow gate</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <p>
+                      Return to <b>Operations</b> and interact with <b>Rushmore</b>'s number pad to enter the four numbers in
+                      the
+                      order which they were
+                      revealed. A panel containing four <b>Ray Gun MK II Frames</b> will be revealed on the wall opposite of
+                      <b>Rushmore</b>.
+                    </p>
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- Ray Gun Mark II-V -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelRayGunMKII-headingV">
+              <button class="accordion-button collapsed yellow" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelRayGunMKII-V" aria-expanded="false" aria-controls="panelRayGunMKII-V">
+                <i class="fa-solid fa-bolt me-3" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-title="The <b>Ray Gun Mark II-V</b> has <b>infinitely recharging</b> ammo and the gun has an arcing <b>Kill-O-Watt</b> effect after firing it at a group of zombies for a period of time."></i>
+                <span class="yellow"> Ray Gun Mark II-V</span>
+              </button>
+            </h2>
+            <div id="panelRayGunMKII-V" class="accordion-collapse collapse" aria-labelledby="panelRayGunMKII-headingV">
+              <div class="accordion-body">
+                <ol>
+                  <li>Obtain the <b>Ray Gun MK II Assembly Kit</b> and a <b>Frame</b>.</li>
+                  <li>Obtain a weapon with the <b class="yellow">Kill-a-Watt</b> alternate ammo type via the <b>Pack-a-Punch</b>.</li>
+                  <li>
+                    Navigate to <b>Generators</b>, locate a metal panel which emits <b class="yellow">yellow mist</b>, shoot it with the
+                    <b class="yellow">Kill-a-Watt</b> weapon to
+                    reveal a <b class="yellow">yellow ammo canister</b>.
+                    <ul>
+                      <li><a href="https://i.imgur.com/rPfm9TQ.png">Generators near Beds entrance</a></li>
+                      <li><a href="https://i.imgur.com/8Hh4Wml.png">Generators near Ventilation Console]</a></li>
+                      <li><a href="https://i.imgur.com/2sY9TfK.jpg">Generators near Tonic Perk</a></li>
+                    </ul>
+                  </li>
+                  <li>Return to the surface level of Nuketown and locate an electrical pole which emits <span class="yellow">yellow sparks</span> and
+                    shoot it with the <b class="yellow">Kill-a-Watt</b> weapon. A <span class="yellow">yellow orb</span> will spawn on the pole.
+                  </li>
+                  <li>
+                    With the <span class="yellow">yellow orb</span> on the original pole, locate <b>4</b> more poles and shoot the <span class="yellow">yellow
+                      sparks</span> with the <b class="yellow">Kill-a-Watt</b> weapon to connect the electrical current.
+                    <ul style="list-style: square outside none;">
+                      <li><a href="https://i.imgur.com/MN6GliS.png">Transfusion Facility Backyard</a></li>
+                      <li><a href="https://i.imgur.com/SL4C2aA.png">Cul-De-Sac outside Prisoner Holding</a></li>
+                      <li><a href="https://i.imgur.com/SbHFogI.png">Cul-De-Sac Transfusion Facility House</a></li>
+                      <li><a href="https://i.imgur.com/KLE7NBV.png">Site Entrance outside APD House</a></li>
+                      <li><a href="https://i.imgur.com/jr1JF96.png">Transfusion Facility Backyard</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    Navigate to the <a href="https://i.imgur.com/Pk3AGWX.png">green generator in the Cul-de-sac</a> near the
+                    <b class="yellow">Yellow House</b> and interact with the generator to place the ammo canister, revealing a <span class="yellow">yellow soul
+                      circle</span>.
+                  </li>
+                  <li>
+                    Kill zombies with a weapon with <b class="yellow">Kill-O-Watt</b> inside the circle until the ammo canister is charged
+                    and the circle disappears, interact with the generator once more to pick it up.
+                  </li>
+                  <li>Craft the <b>Ray Gun Mark II-V</b> on the buildable table in the upper floor of <b>Operations</b>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- Ray Gun Mark II-X -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelRayGunMKII-headingX">
+              <button class="accordion-button collapsed blue" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelRayGunMKII-X" aria-expanded="false" aria-controls="panelRayGunMKII-X">
+                <i class="fa-solid fa-arrows-spin me-3" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-title="The <b>Ray Gun Mark II-X/b> is a fully automatic <b>Ray Gun Mark II</b>."></i>
+                <span class="blue"> Ray Gun Mark II-X</span>
+              </button>
+            </h2>
+            <div id="panelRayGunMKII-X" class="accordion-collapse collapse" aria-labelledby="panelRayGunMKII-headingX">
+              <div class="accordion-body">
+                <ol>
+                  <li>Obtain the <b>Ray Gun MK II Assembly Kit</b> and a <b>Frame</b>.</li>
+                  <li>Obtain a weapon with the <b class="blue">Cryofreeze</b> alternate ammo type via the <b>Pack-a-Punch</b>.</li>
+                  <li>
+                    Locate a cabinet or drawer which emits a <span class="blue">blue mist</span>, locations below. Shoot it with the
+                    <b class="blue">Cryofreeze</b> weapon to
+                    reveal a blue ammo canister.
+                    <ul style="list-style: square outside none;">
+                      <li><a href="https://i.imgur.com/cHjYaNz.png">APD Interrogation</a></li>
+                      <li><a href="https://i.imgur.com/dyONPj9.png">Prisoner Holding</a></li>
+                      <li><a href="https://i.imgur.com/lsSBDgG.png">Operations</a></li>
+                    </ul>
+                  </li>
+                  <li>Navigate to any area of the Bunker, here <a href="https://i.imgur.com/RHAaKBo.png">Zombies with a blue
+                      mist</a>
+                    will begin to spawn. Shoot these zombies using the <b class="blue">Cryofreeze</b> weapon to freeze them. Then, once the zombie is frozen,
+                    melee it to drop a <span class="blue">blue goo</span> on the ground which can be picked up. Repeat this process a total of <b>3</b> times.</li>
+                  <li>Navigate to <b>APD Control</b> and place the ammo canister inside of the <a
+                      href="https://i.imgur.com/JQhNdlO.png">broken container near the map on the wall</a>, revealing a <span class="blue">blue soul circle</span></li>
+                  <li>Kill zombies within the circle until the ammo canister is charged and the circle disappears, interact with
+                    the container once more to pick it up.</li>
+                  <li>Craft the <b>Ray Gun Mark II-X</b> on the buildable table in the upper floor of <b>Operations</b>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- Ray Gun Mark II-Y -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelRayGunMKII-headingY">
+              <button class="accordion-button collapsed green" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelRayGunMKII-Y" aria-expanded="false" aria-controls="panelRayGunMKII-Y">
+                <i class="fa-solid fa-explosion me-3" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-title="The <b>Ray Gun Mark II-Y</b> is able to be charged up and be fired for a gigantic explosion that can easily kill an entire horde of zombies."></i>
+                <span class="green"> Ray Gun Mark II-Y</span>
+              </button>
+            </h2>
+            <div id="panelRayGunMKII-Y" class="accordion-collapse collapse" aria-labelledby="panelRayGunMKII-headingY">
+              <div class="accordion-body">
+                <ol>
+                  <li>Obtain the <b>Ray Gun MK II Assembly Kit</b> and a <b>Frame</b>.</li>
+                  <li>Obtain a weapon with the <b class="green">Brain Rot</b> alternate ammo type via the <b>Pack-a-Punch</b>.</li>
+                  <li>Locate a dirt pile which emits <span class="green">green mist</span>, locations below. Shoot a Zombie using the <b class="green">Brain
+                      Rot</b> weapon near the dirt pile, once the zombie becomes friendly it will dig, revealing an <b class="orange">orange ammo canister</b>.
+                    <ul style="list-style: square outside none;">
+                      <li><a href="https://i.imgur.com/E0A8BeG.png">Green House Backyard near shed</a></li>
+                      <li><a href="https://i.imgur.com/bU7ccki.png">Center Street near light pole</a></li>
+                      <li><a href="https://i.imgur.com/KbnA1YH.png">Yellow House Backyard near backdoor</a></li>
+                    </ul>
+                  </li>
+                  <li>Locate a <a href="https://i.imgur.com/f6xeQPH.png">yellow orb</a> floating above a
+                    teleporter.
+                  </li>
+                  <li>
+                    Obtain and place a <b>Telepad</b> on this teleporter and then shoot the orb, causing it to teleport.
+                  </li>
+                  <li>
+                    Now after the orb has teleported you must go around the map and find another teleporter where the orb
+                    teleported to. Once you find it, place your 2nd telepad on that teleporter and shoot the orb.
+                  </li>
+                  <li>Once you've shot the orb use the teleporter to teleport to the orb and it will push the orb out of the
+                    teleporter. The orb will now make its way to <a href="https://i.imgur.com/IHFt2LN.png">Storage</a> where the
+                    ammo canister can be placed, revealing a <span class="yellow">yellow soul circle</span>.</li>
+                  <li>Kill Zombies within the circle until the ammo canister is charged and the circle disappears, interact with
+                    the container once more to pick it up.
+                  </li>
+                  <li>Craft the <b>Ray Gun Mark II-Y</b> on the buildable table in the upper floor of <b>Operations</b>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+          <!-- Ray Gun Mark II-Z -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="panelRayGunMKII-headingZ">
+              <button class="accordion-button collapsed red bg-danger bg-opacity-10" type="button" data-bs-toggle="collapse"
+                data-bs-target="#panelRayGunMKII-Z" aria-expanded="false" aria-controls="panelRayGunMKII-Z">
+                <i class="fa-solid fa-burst me-3" data-bs-toggle="tooltip" data-bs-html="true"
+                  data-bs-title="The <b>Ray Gun Mark II-Z</b> is a shotgun-esque Ray Gun that is fully automatic."></i>
+                <span class="red"> Ray Gun Mark II-Z</span>
+              </button>
+            </h2>
+            <div id="panelRayGunMKII-Z" class="accordion-collapse collapse" aria-labelledby="panelRayGunMKII-headingZ">
+              <div class="accordion-body">
+                <ol>
+                  <li>Obtain the <b>Ray Gun MK II Assembly Kit</b> and a <b>Frame</b>.</li>
+                  <li>Obtain a weapon with the <b class="red">Fire Bomb</b> alternate ammo type via the <b>Pack-a-Punch</b>.</li>
+                  <li>Locate a cabinet which emits an <span class="orange">orange mist</span>, locations below. Shoot it with the <b class="red">Fire Bomb</b>
+                    weapon to reveal a <span class="purple">purple ammo canister</span>.
+                    <ul style="list-style: square outside none;">
+                      <li><a href="https://i.imgur.com/CCcwn35.png">Green House Downstairs kitchen</a></li>
+                      <li><a href="https://i.imgur.com/oUATAfU.png">Yellow House Downstairs kitchen</a></li>
+                      <li><a href="https://i.imgur.com/cl3CRbH.png">Lounge near pool table</a></li>
+                    </ul>
+                  </li>
+                  <li>Locate a <a href="https://i.imgur.com/6kj8icV.png">house with a chimney</a> which is emitting a <span class="purple">purple smoke</span>,
+                    locations below. Throw a <b>Wraith Fire</b>, <b>Frag</b>, or <b>Acid Bomb</b> grenade directly on top of the
+                    chimney. If done correctly, the smoke will dissipate.
+                  </li>
+                  <li>The <b>fireplace</b> within the house will now have a <b class="purple">purple fire</b> where the ammo canister can
+                    be placed, revealing a <span class="purple">purple soul circle</span>.</li>
+                  <li>Kill Zombies with a weapon with <b class="red">Fire Bomb</b> within the circle until the ammo canister is charged and
+                    the circle disappears, interact with the container once more to pick it up.</li>
+                  <li>Craft the <b>Ray Gun Mark II-Z</b> on the buildable table in the upper floor of <b>Operations</b>.</li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div style="height: 2rem;">
+
+    </div>
+  </body>
+</html>
